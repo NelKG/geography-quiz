@@ -37,3 +37,10 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 ---
 
 Happy coding!
+
+
+https://fonts.google.com/specimen/Roboto?preview.text=Geography%20Quiz&preview.text_type=custom&query=roboto
+
+font choice font awesome and google fonts Light 300 font chosen. 
+
+hexcode for light grey was chosen - #D3D3D3 #d3dede check which color. 
