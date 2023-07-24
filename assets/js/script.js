@@ -93,7 +93,7 @@ function beginQuiz() {
 
     currentQuestionIndex = 0;
     score = 0;
-    nextButton.innerHTML = "None";
+    nextButton.innerHTML = "Next";
     showQuestion();
 }
 function showQuestion() {
@@ -116,31 +116,32 @@ function showQuestion() {
 
 function resetState() {
 
-    nextButton.style.display = "next";
+    nextButton.style.display = "none";
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
+}
 
-    function selectAnswer(e) {
-        const selectedBtn = e.target;
-        const isCorrect = selectedBtn.dataset.correct ==="true":
-        if(isCorrect) {
-            selectedBtn.classList.add("correct");
-        }else{
-            selectedBtn.classList.add("correct");
+function selectAnswer(e) {
+    const selectedBtn = e.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if (isCorrect) {
+        selectedBtn.classList.add("correct");
+        score++;
+    } else {
+        selectedBtn.classList.add("correct");
 
+    }
+
+    Array.from(answerButtons.children).forEach(button => {
+        if (button.dataset.correct === "true") {
+            button.classList.add("correct");
         }
+        button.disabled = true;
+    });
 
-        Array.from(answerButtons.children).forEach(button => {
-            if(button.dataset.correct === "true"){
-                button.classList.add("correct");
-            }
-            button.disabled = truel
-        });
-
-        nextButton.style.display = "block";
-        }
-    
+    nextButton.style.display = "block";
+}
 
 beginQuiz();
 
@@ -155,3 +156,5 @@ beginQuiz();
 
 
 
+
+}

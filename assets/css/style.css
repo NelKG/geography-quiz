@@ -1,6 +1,13 @@
 body{
 
     background-color: #d3d3d3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
     
 }
 
@@ -33,7 +40,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-    .container {
+    .game {
         padding: 20px 0;
         display: flex;
         justify-content: center;
@@ -43,7 +50,7 @@ body{
     
     }
 
-    .container h2{
+    .quiz h2{
         font-size: 19ps;
         font-weight: 600;
         display: flex;

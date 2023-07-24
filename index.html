@@ -18,33 +18,32 @@
 </head>
 
 <body>
-    <div class= "game">
+    <div class= "Quiz">
      <h1> Geography Quiz  <span class="material-symbols-outlined">
             quiz  </span> </h1>        
         <div class="container">
-        <h2 id= "question"> Question goes here </h2>
-        <div id ="answer-buttons">
+            <div id="question-container"  class="hide"></div>
+        <div id= "question"> Question goes here </div>        
+        <div id ="answer-buttons" class="btn-grid">
         <button class="btn">Answer 1</button>
         <button class="btn">Answer 2</button>
         <button class="btn">Answer 3</button>
         <button class="btn">Answer 4</button>
     </div>
-    <button id="next-btn">Next Question</button>
     </div>
-    </div>
-          
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+        </div>
         
     <div class = "score-area">
         <p class="scores">Correct Answers <span id="score">0</span></p>
         <p class="scores">Incorrect Answers <span id="score">0</span></p>
         </div>
-
-           
-            <a class="btn" href="index.html"> Play</a>
-            <a href="btn" href="scores.html">Scores</a>
-        </div>
-    </div>
-</div>
+   
+            
+        
 
 
 
