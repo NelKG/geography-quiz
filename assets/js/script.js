@@ -85,16 +85,20 @@
 
 const startButton= document.getElementById('start-btn')
 
-startButton.addEventListener('click', startGame)
-// const questionElement = document.getElementById("question");
+startButton.addEventListener('click', startQuiz)
+const questionContainerElement = document.getElementById('question-container');
+setNextQuestion();
 // const answerButtons = document.getElementById("answer-buttons");
 // const nextButton = document.getElementById("next-btn");
 
 // let currentQuestionIndex = 0;
 // let score = 0;
 
-function startGame() {
+function startQuiz() {
     console.log('Started')
+    startButton.classList.add('hide')
+    questionContainerElement.clasList.remove('hide')
+    setNextQuestion();
 }
 
 function setNextQuestion(){
