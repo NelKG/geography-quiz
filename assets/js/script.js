@@ -1,3 +1,47 @@
+const startButton = document.getElementById('start-btn')
+const questionContainerElement = document.getElementById('question-container');
+// const questionElement = document.getElementById('question');
+// const answerButtons = document.getElementById('answer-buttons');
+
+// let shuffledQuestions, currentQuestionIndex;
+// const answerButtons = document.getElementById("answer-buttons");
+// const nextButton = document.getElementById("next-btn");
+
+// let currentQuestionIndex = 0;
+// let score = 0;
+
+startButton.addEventListener('click', startQuiz);
+
+function startQuiz() {
+    console.log('Started');
+    startButton.classList.add('hide');
+    // shuffledQuestions = questions.sort(() => Math.random() -.5);
+    // currentQuestionIndex = 0;
+    questionContainerElement.classList.remove('hide');
+}
+
+    // setNextQuestion(){
+
+    // }
+
+
+function setNextQuestion(){
+    // showQuestion(shuffledQuestions[currentQuestionIndex]);
+
+}
+
+function showQuestion(question) {
+    // questionElement.innerText = question.question;
+
+
+}
+
+function selectAnswer(){
+
+
+}
+
+
 // const questions = [
 //     {
 //         question: "What is the capital of Sweden?",
@@ -80,41 +124,13 @@
 
 
 
-// ];
-
-
-const startButton= document.getElementById('start-btn')
-
-startButton.addEventListener('click', startQuiz)
-const questionContainerElement = document.getElementById('question-container');
-setNextQuestion();
-// const answerButtons = document.getElementById("answer-buttons");
-// const nextButton = document.getElementById("next-btn");
-
-// let currentQuestionIndex = 0;
-// let score = 0;
-
-function startQuiz() {
-    console.log('Started')
-    startButton.classList.add('hide')
-    questionContainerElement.clasList.remove('hide')
-    setNextQuestion();
-}
-
-function setNextQuestion(){
-
-}
-
-function selectAnswer(){
-
-
-}
+// ]
 //     currentQuestionIndex = 0;
 //     score = 0;
 //     nextButton.innerHTML = "Next";
 //     showQuestion();
 // }
-// function showQuestion() {
+// // function showQuestion() {
 //     resetState();
 //     let currentQuestion = questions[currentQuestionIndex];
 //     let questionNo = currentQuestionIndex + 1;
