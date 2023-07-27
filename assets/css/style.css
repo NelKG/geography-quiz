@@ -153,3 +153,19 @@ body {
 .hide {
     display: none;
 }
+
+#qresult {
+    display: flex;
+    
+    position: relative;   
+    
+    
+}
+
+.qresult-prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+.qresult-main-text {
+ text-align: center;   
+}
