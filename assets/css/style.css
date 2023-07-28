@@ -131,7 +131,7 @@ body {
     }      
 
 #next-btn {
-    background: #008000;
+    background: #f2d2bd;
     color: #fff;
     font-weight: 500;
     width: 150px;
@@ -147,7 +147,7 @@ body {
 }
 
 .incorrect {
-    background: #ff9393;
+    background: #8b000063;
 
 }
 .hide {
