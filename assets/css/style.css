@@ -9,7 +9,8 @@ body {
     width: 100vw;
     height: 100vh;
     font-weight: bold;
-    
+    font-size: 25px;
+
 }
 
 
@@ -30,7 +31,7 @@ body {
 
 /* } */
 .quiz h1 {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 600;
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
@@ -72,29 +73,30 @@ body {
     flex-direction: column;
     align-items: center; */
 
-    /* .controls{
+/* .controls{
 
         gap: 10px;
         
     } */
 
 .btn {
-    background: rgba(255, 255, 255, 0.897);      
+    background: rgba(255, 255, 255, 0.897);
     color: #222;
-    font-weight: 500;
+    font-weight: 600;
     width: 100%;
     border: 1px solid #222;
     padding: 10px;
     margin: 10px 0;
     text-align: left;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     transition: all 0.4s;
     text-decoration: none;
 
 
 }
-.btn:hover{
+
+.btn:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 255, 0.897);
     transform: translateY(-0.1rem);
@@ -102,7 +104,7 @@ body {
 }
 
 /* .btn:hover:not([disabled]) {
-    background: #008000;
+
     color: #fff;
 } */
 
@@ -122,40 +124,43 @@ body {
     padding: 10px 20px;
     margin: 20px auto 0;
     border-radius: 4px;
-    cursor: pointer;          
-    
-}   
+    cursor: pointer;
 
-    .start-btn, .next-btn{
-        font-size: 1.5rem;  
-        font-weight: bold;       
-    }      
+}
+
+.start-btn,
+.next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 #next-btn {
-    background: #f2d2bd;
+    background: #0066cc;
     color: #fff;
-    font-weight: 500;
-    width: 150px;
+    font-weight: 550;
+    width: 160px;
     border: 0;
     padding: 10px;
     margin: 20px auto 0;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+
 }
 
 .correct {
-    background: #9aeabc;
+    background: whitesmoke;
 }
 
 .incorrect {
-    background: #ff000070;
+    background: rgb(192, 192, 192);
 
 }
+
 .hide {
     display: none;
 }
 
-#qresult {
+/* #qresult {
     display: flex;
     
     position: relative;   
@@ -169,4 +174,4 @@ body {
 }
 .qresult-main-text {
  text-align: center;   
-}
+} */

@@ -3,11 +3,13 @@ const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
+const userScore= document.getElementById('user-score');
 // const questionCounterText = document.getElementById('questionCounter');
 // const scoreText = document.getElementById('score');
 
 let shuffledQuestions, currentQuestionIndex;
 var correctAnswers = 0;
+let score = 0;
 
 // document.addEventListener("DOMContentLoaded", function () {
 //     let buttons = document.getElementsByTagName("button");
@@ -40,7 +42,14 @@ function startQuiz() {
     setNextQuestion();
     score = 0;
     questionCounter = 0;
+    
 }
+
+// function loadScore() {
+//     const totalScore = document.getElementById("score");
+//     totalScore.textContent = `You scored ${score} out of ${Questions.length}`;
+// }
+
 
 function setNextQuestion() {
     resetState();
@@ -83,11 +92,12 @@ function selectAnswer(e) {
     const incorrectVal = parseInt(incorrect.innerText);
     if (correct) {
         score.innerText = scoreVal + 1;
-        console.log("correctt", parseInt(score.innerText));
+        console.log("correct", parseInt(score.innerText));
+        
         //correctAnswers++;
     } else {
         incorrect.innerText = incorrectVal + 1;
-        console.log("correctt", parseInt(incorrect.innerText));
+        console.log("correct", parseInt(incorrect.innerText));
     }
     setStatusClass(document.body, correct);
     Array.from(answerButtonsElement.children).forEach(button => {
@@ -102,6 +112,7 @@ function selectAnswer(e) {
         startButton.classList.remove('hide');
 
     }
+    restartBtn.addEventListener('click, restart');
     // button.disabled = correct;
 }
 nextButton.style.dislay = "block";
@@ -112,10 +123,12 @@ function setStatusClass(element, correct) {
     if (correct) {
 
         element.classList.add('correct');
-        score++;
+        
     } else {
 
         element.classList.add('incorrect');
+       
+
     }
 }
 
@@ -124,6 +137,35 @@ function clearStatusClass(element) {
     element.classList.remove('incorrect');
 
 }
+
+// function showScore(){
+//     resetState();
+//   questionElement.innerHTML = `You scored ${score} out of
+//       ${questions.length}!`;
+//       nextButton.innerHTML= "Play Again";
+//       nextButton.style.display = "block";
+
+//  }
+
+//  function handleNextButton(){
+//      currentQuestionIndex++;
+//     if(currentQuestionIndex <questions.length){
+//         showQuestion();
+//   }else{
+//          showScore();
+//    }
+
+    
+
+
+// nextButton.addEventListener("click", () =>{
+//     if(currentQuestionIndex < questions.length){
+//         handleNextButton();
+//     }else{
+//         startQuiz();
+//     }
+    
+// });
 // function showScore(){
 //     resetState();
 //     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`
@@ -131,14 +173,14 @@ function clearStatusClass(element) {
 //     nextButton.style.display= "block";
 
 // }
-// function handleNextButton(){
+// // function handleNextButton(){
 //     currentQuestionIndex++;
 //     if(currentQuestionIndex < questions.length){
 //         showQuestion();
 //     }else{
 //         showScore();
 //     }
-//     }
+    
 //     nextButton.addEventListener("click", ()=>{
 //         if(currentQuestionIndex < questions.length {
 //             handleNextButton();
@@ -150,49 +192,7 @@ function clearStatusClass(element) {
 
 
 
-// // function checkAnswer() {
-
-//     // Checks the answer against the first element in
-//     // the returned calculateCorrectAnswer array
-
-//     // let userAnswer = parseInt(document.getElementById("answer-box").value);
-//     // let calculatedAnswer = calculateCorrectAnswer();
-//     // let isCorrect = userAnswer === calculatedAnswer[0];
-
-//     // if (isCorrect) {
-//     //     alert("Hey! You got it right! :D");
-//     //     incrementScore();
-//     // } else {
-//     //     alert(`Awwww...you answered ${userAnswer}. The correct answer was ${calculatedAnswer[0]}!`);
-//     //     incrementWrongAnswer();
-//     // }
-
-// startQuiz(calculatedAnswer[1]);
-
-// }
-
 // function incrementScore() {
-
-//     // Gets the current score from the DOM and increments it
-
-//     let oldScore = parseInt(document.getElementById("score").innerText);
-//     document.getElementById("score").innerText = ++oldScore;
-
-// }
-
-// function incrementWrongAnswer() {
-
-//     // Gets the current tally of incorrect answers from the DOM and increments it
-
-//     let oldScore = parseInt(document.getElementById("incorrect").innerText);
-//     document.getElementById("incorrect").innerText = ++oldScore;
-
-// }
-
-
-
-
-// // function incrementScore() {
 
 // //     let oldScore = parseInt(document.getElementById("score").innerText);
 // //     document.getElementById("score").innerText = ++oldScore;
@@ -205,7 +205,7 @@ function clearStatusClass(element) {
 //     // }
 
 
-// // function nextQuestion(e) {
+//  function nextQuestion(e) {
 // //     questionCounter++;
 // //     questionNumber.innerText = `${questionCounter}`;
 // //     document.getElementById(answerSelected).classList.remove("correctbtn", "incorrectbtn");
@@ -218,7 +218,7 @@ function clearStatusClass(element) {
 // //             button.removeAttribute("data-correct", "true");
 // //         }
 //     // }
-//     // getQuestion(data);
+    //  getQuestion(data);
 
 
 const questions = [
