@@ -43,6 +43,7 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 10px 2px;
+    background: url('../images/world-map.JPG') no-repeat center center;
 }
 
 .container {
@@ -56,9 +57,9 @@ body {
     /* background-color: white; */
     border-radius: 5px;
     margin: 20px 0;
-    background: url('../images/world-map.JPG') no-repeat center center;
+    /* background: url('../images/world-map.JPG') no-repeat center center; */
     color: #333;
-    font-weight: bold;
+    font-weight: 700;
 
 
 
@@ -100,10 +101,10 @@ body {
     transition: transform 150ms;
 }
 
-.btn:hover:not([disabled]) {
+/* .btn:hover:not([disabled]) {
     background: #008000;
     color: #fff;
-}
+} */
 
 .btn:disabled {
     cursor: no-drop;
@@ -113,9 +114,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #80004f;
+    background: rgb(192, 192, 192);
     color: #fff;
-    font-weight: 500;
+    font-weight: 800;
     width: 170px;
     border: 0;
     padding: 10px 20px;
@@ -147,7 +148,7 @@ body {
 }
 
 .incorrect {
-    background: #8b000063;
+    background: #ff000070;
 
 }
 .hide {

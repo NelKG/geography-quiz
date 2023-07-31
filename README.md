@@ -52,4 +52,8 @@ image picture of map
 <https://www.freepik.com/free-vector/white-world-map_783204.htm#query=3d%20world%20map&position=7&from_view=keyword&track=ais>
 
 
+youtube ideo 
+
+<https://stackoverflow.com/questions/66308020/how-to-add-a-score-function-to-my-quiz-using-javascript>
+
 errors answer buttons element nodefined - debugged 
