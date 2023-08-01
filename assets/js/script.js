@@ -6,6 +6,7 @@ const answerButtonsElement = document.getElementById('answer-buttons');
 const userScore= document.getElementById('user-score');
 // const questionCounterText = document.getElementById('questionCounter');
 // const scoreText = document.getElementById('score');
+const resultBox=document.getElementById('resultBox');
 
 let shuffledQuestions, currentQuestionIndex;
 var correctAnswers = 0;
@@ -116,6 +117,27 @@ function selectAnswer(e) {
     // button.disabled = correct;
 }
 nextButton.style.dislay = "block";
+
+// function selectAnswer(e) {
+//     const selectedButton = e.target;
+//     const correct = selectedButton.dataset.correct;
+//     if (correct) {
+//         correctAnswers++;
+//     }
+//     setStatusClass(document.body, correct);
+//     Array.from(answerButtonsElement.children).forEach(button => {
+//         setStatusClass(button, button.dataset.correct);
+//     });
+//     if (RandomQuestions.length > currentQuestion + 1) {
+//         nextButton.classList.remove('hide');
+//     } else {
+//         display(correctAnswers.toString() + "/" + RandomQuestions.length.toString());
+//         correctAnswers = 0;
+//         startButton.innerText = 'Restart';
+//         startButton.classList.remove('hide');
+//     }
+// }
+
 
 
 function setStatusClass(element, correct) {

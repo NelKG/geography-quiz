@@ -160,6 +160,14 @@ body {
     display: none;
 }
 
+.resultBox {
+
+    text-align: center;
+    color: black;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 /* #qresult {
     display: flex;
     
@@ -168,10 +176,10 @@ body {
     
 }
 
-.qresult-prefix{
+* .qresult-prefix{
     text-align: center;
     font-size: 2rem;
 }
 .qresult-main-text {
  text-align: center;   
-} */
+} */ 
