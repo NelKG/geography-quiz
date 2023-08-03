@@ -3,10 +3,10 @@ const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
-const userScore= document.getElementById('user-score');
+const userScore = document.getElementById('user-score');
 // const questionCounterText = document.getElementById('questionCounter');
 // const scoreText = document.getElementById('score');
-const resultBox=document.getElementById('resultBox');
+const resultBox = document.getElementById('resultBox');
 
 let shuffledQuestions, currentQuestionIndex;
 var correctAnswers = 0;
@@ -36,6 +36,8 @@ nextButton.addEventListener('click', () => {
 });
 
 function startQuiz() {
+    const scoreArea = document.getElementById('score-area');
+    scoreArea.style.display = 'block';
     startButton.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
@@ -43,7 +45,7 @@ function startQuiz() {
     setNextQuestion();
     score = 0;
     questionCounter = 0;
-    
+
 }
 
 // function loadScore() {
@@ -85,6 +87,10 @@ function resetState() {
 }
 
 function selectAnswer(e) {
+
+    answerButtonsElement.childNodes.forEach(function (btn) {
+        btn.disabled = true;
+    });
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
     const score = document.getElementById("score");
@@ -94,7 +100,7 @@ function selectAnswer(e) {
     if (correct) {
         score.innerText = scoreVal + 1;
         console.log("correct", parseInt(score.innerText));
-        
+
         //correctAnswers++;
     } else {
         incorrect.innerText = incorrectVal + 1;
@@ -113,8 +119,9 @@ function selectAnswer(e) {
         startButton.classList.remove('hide');
 
     }
-    restartBtn.addEventListener('click, restart');
+    // restartBtn.addEventListener('click, restart');
     // button.disabled = correct;
+    // button.disabled = incorrect;
 }
 nextButton.style.dislay = "block";
 
@@ -145,11 +152,11 @@ function setStatusClass(element, correct) {
     if (correct) {
 
         element.classList.add('correct');
-        
+
     } else {
 
         element.classList.add('incorrect');
-       
+
 
     }
 }
@@ -160,24 +167,6 @@ function clearStatusClass(element) {
 
 }
 
-// function showScore(){
-//     resetState();
-//   questionElement.innerHTML = `You scored ${score} out of
-//       ${questions.length}!`;
-//       nextButton.innerHTML= "Play Again";
-//       nextButton.style.display = "block";
-
-//  }
-
-//  function handleNextButton(){
-//      currentQuestionIndex++;
-//     if(currentQuestionIndex <questions.length){
-//         showQuestion();
-//   }else{
-//          showScore();
-//    }
-
-    
 
 
 // nextButton.addEventListener("click", () =>{
@@ -186,7 +175,7 @@ function clearStatusClass(element) {
 //     }else{
 //         startQuiz();
 //     }
-    
+
 // });
 // function showScore(){
 //     resetState();
@@ -202,7 +191,7 @@ function clearStatusClass(element) {
 //     }else{
 //         showScore();
 //     }
-    
+
 //     nextButton.addEventListener("click", ()=>{
 //         if(currentQuestionIndex < questions.length {
 //             handleNextButton();
@@ -240,7 +229,7 @@ function clearStatusClass(element) {
 // //             button.removeAttribute("data-correct", "true");
 // //         }
 //     // }
-    //  getQuestion(data);
+//  getQuestion(data);
 
 
 const questions = [
@@ -376,7 +365,3 @@ const questions = [
 //     });
 
 //     nextButton.style.display = "block";
-
-
-
-

@@ -160,6 +160,10 @@ body {
     display: none;
 }
 
+#score-area {
+    display: none;
+}
+
 .resultBox {
 
     text-align: center;
@@ -168,6 +172,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
 /* #qresult {
     display: flex;
     
@@ -182,4 +187,35 @@ body {
 }
 .qresult-main-text {
  text-align: center;   
-} */ 
+} */
+
+#quiz-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    background: #FAFAFA;
+    width: 100%;
+    height: calc(100% - 44px);
+}
+
+#quiz-results-message {
+    display: block;
+    color: #00403C;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#quiz-results-score {
+    display: block;
+    color: #31706c;
+    font-size: 20px;
+}
+
+#quiz-results-score b {
+    color: #00403C;
+    font-weight: 600;
+    font-size: 20px;
+}
