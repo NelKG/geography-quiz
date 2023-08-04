@@ -61,6 +61,7 @@ body {
     /* background: url('../images/world-map.JPG') no-repeat center center; */
     color: #333;
     font-weight: 700;
+    background-color: #ffffff;
 
 
 
@@ -129,9 +130,13 @@ body {
 }
 
 .start-btn,
-.next-btn {
+.next-btn,
+.restart-btn {
     font-size: 1.5rem;
     font-weight: bold;
+    /* padding: 0.5em 1.8em; */
+    /* border-radius: 0.2em; */
+    justify-content: center;
 }
 
 #next-btn {
@@ -144,6 +149,14 @@ body {
     margin: 20px auto 0;
     border-radius: 5px;
     cursor: pointer;
+
+}
+
+#restart {}
+
+#user-score {
+    font-size: 1.5em;
+    color: #ffffff;
 
 }
 

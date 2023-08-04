@@ -4,28 +4,18 @@ const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const userScore = document.getElementById('user-score');
-// const questionCounterText = document.getElementById('questionCounter');
-// const scoreText = document.getElementById('score');
+const restart = document.getElementById('restart');
+let countOfQuestion = document.querySelector('number-of-question');
+let scorearea = document.querySelector = ('score-area');
+
+const questionCounterText = document.getElementById('questionCounter');
+const scoreText = document.getElementById('score');
 const resultBox = document.getElementById('resultBox');
 
 let shuffledQuestions, currentQuestionIndex;
 var correctAnswers = 0;
 let score = 0;
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     let buttons = document.getElementsByTagName("button");
-
-//     for (let button of buttons) {
-//         button.addEventListener("click", function () {
-//             if (this.getAttribute("data-type") === "submit") {
-//                 checkAnswer();
-//             } else {
-//                 let gameType = this.getAttribute("data-type");
-//                 runGame(gameType);
-//             }
-//         });
-//     }
-
+let question;
 
 
 
@@ -43,6 +33,7 @@ function startQuiz() {
     currentQuestionIndex = 0;
     questionContainerElement.classList.remove('hide');
     setNextQuestion();
+    countOfQuestion.innerHTML = 1 + "of" + quizArray.length + "Question;";
     score = 0;
     questionCounter = 0;
 
@@ -79,6 +70,7 @@ function showQuestion(question) {
 
 }
 function resetState() {
+    clearStatusClass(document.body);
     nextButton.classList.add('hide');
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild);
@@ -87,7 +79,6 @@ function resetState() {
 }
 
 function selectAnswer(e) {
-
     answerButtonsElement.childNodes.forEach(function (btn) {
         btn.disabled = true;
     });
@@ -101,7 +92,7 @@ function selectAnswer(e) {
         score.innerText = scoreVal + 1;
         console.log("correct", parseInt(score.innerText));
 
-        //correctAnswers++;
+        correctAnswers++;
     } else {
         incorrect.innerText = incorrectVal + 1;
         console.log("correct", parseInt(incorrect.innerText));
@@ -113,37 +104,20 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
     } else {
-        element.innerText = correctAnswers.toString() + "/" + RandomQuestions.length.toString();
-        correctAnswers = 0;
+        // startButton.innerText = correctAnswers.toString() + "/" + RandomQuestions.length.toString();
+        // correctAnswers = 0;
         startButton.innerText = 'Restart';
         startButton.classList.remove('hide');
 
     }
+    // nextButton.classList.remove('hide');
     // restartBtn.addEventListener('click, restart');
     // button.disabled = correct;
     // button.disabled = incorrect;
 }
 nextButton.style.dislay = "block";
 
-// function selectAnswer(e) {
-//     const selectedButton = e.target;
-//     const correct = selectedButton.dataset.correct;
-//     if (correct) {
-//         correctAnswers++;
-//     }
-//     setStatusClass(document.body, correct);
-//     Array.from(answerButtonsElement.children).forEach(button => {
-//         setStatusClass(button, button.dataset.correct);
-//     });
-//     if (RandomQuestions.length > currentQuestion + 1) {
-//         nextButton.classList.remove('hide');
-//     } else {
-//         display(correctAnswers.toString() + "/" + RandomQuestions.length.toString());
-//         correctAnswers = 0;
-//         startButton.innerText = 'Restart';
-//         startButton.classList.remove('hide');
-//     }
-// }
+
 
 
 
@@ -166,71 +140,6 @@ function clearStatusClass(element) {
     element.classList.remove('incorrect');
 
 }
-
-
-
-// nextButton.addEventListener("click", () =>{
-//     if(currentQuestionIndex < questions.length){
-//         handleNextButton();
-//     }else{
-//         startQuiz();
-//     }
-
-// });
-// function showScore(){
-//     resetState();
-//     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`
-//     nextButton.innerHTML ="Play Again";
-//     nextButton.style.display= "block";
-
-// }
-// // function handleNextButton(){
-//     currentQuestionIndex++;
-//     if(currentQuestionIndex < questions.length){
-//         showQuestion();
-//     }else{
-//         showScore();
-//     }
-
-//     nextButton.addEventListener("click", ()=>{
-//         if(currentQuestionIndex < questions.length {
-//             handleNextButton();
-//         }else{
-//             startQuiz();
-
-//         }
-//         });
-
-
-
-// function incrementScore() {
-
-// //     let oldScore = parseInt(document.getElementById("score").innerText);
-// //     document.getElementById("score").innerText = ++oldScore;
-
-// // }
-// //     function incrementWrongAnswer() {
-
-// //         let oldScore = parseInt(document.getElementById("incorrect").innerText);
-// //         document.getElementById("incorrect").innerText = ++oldScore;
-//     // }
-
-
-//  function nextQuestion(e) {
-// //     questionCounter++;
-// //     questionNumber.innerText = `${questionCounter}`;
-// //     document.getElementById(answerSelected).classList.remove("correctbtn", "incorrectbtn");
-// //     let displayCorrectAnswer = document.querySelector("[data-correct='true']");
-// //     displayCorrectAnswer.classList.remove("correctbtn");
-// //     // Remove the attribute on correct question ready for the next question
-// //     // loops through to check for correct answer & adds data attribute to the correct answer 
-// //     for (let button of answerButtons) {
-// //         if (button.innerHTML === correctAnswer) {
-// //             button.removeAttribute("data-correct", "true");
-// //         }
-//     // }
-//  getQuestion(data);
-
 
 const questions = [
     {

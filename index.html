@@ -15,11 +15,15 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="assets/css/style.css">
+
+
     <title> Geography Quiz</title>
 </head>
 
 <body>
+
     <div class="quiz">
+        <!--  -->
         <h1> Geography Quiz <span class="material-symbols-outlined">
                 quiz </span> </h1>
         <div class="container">
@@ -38,21 +42,29 @@
         <div class="controls">
             <button id="start-btn" class="start-btn btn">Start</button>
             <button id="next-btn" class="next-btn btn hide">Next</button>
+            <!-- <button id="restart" class="restart-btn hide"> Restart</button> -->
+
         </div>
+
 
     </div>
 
     <div id="score-area">
+        <div class="number-of-count">
+            <span class="number-of-question"></span>
+        </div>
+
+        <p class="scores"> Question Counter: <span id="question-counter">1/8</span>
+        </p>
+
+        <!-- <div id="User-Score">Question Number:</div> -->
+
         <p class="scores">Correct Answers: <span id="score">0</span></p>
         <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
-        <div id="qresult-item">
-            <p class="qresult-prefix">
-                Score
-            </p>
-            <h2 class="qresult-main-text" id="score">
-                0
-            </h2>
-        </div>
+
+
+
+
 
         <!-- <div class="quiz-results" id="quiz-results">
             <p id="quiz-results-message"></p>
@@ -64,10 +76,9 @@
 
     </div>
     </div>
-
-
-
-    <!-- <div id="resultBox" class="resultBox"> -->
+    <div class="score-container"></div>
+    <div id="user-score">Final Score</div>
+    <!-- <button id="restart"> Restart</button> -->
 
     </div>
     </div>
