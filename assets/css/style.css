@@ -97,6 +97,24 @@ body {
 
 }
 
+.btn-score {
+    background: white;
+    color: #222;
+    font-weight: 600;
+    width: 100%;
+    border: 1px solid #222;
+    /* padding: 10px; */
+    margin: 20px 0;
+    text-align: centerright;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+    text-decoration: none;
+    /* position: relative; */
+    padding: 2rem, 0;
+    */
+}
+
 .btn:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 255, 0.897);
@@ -123,7 +141,8 @@ body {
     width: 170px;
     border: 0;
     padding: 10px 20px;
-    margin: 20px auto 0;
+
+    margin: 30px auto 0;
     border-radius: 4px;
     cursor: pointer;
 
