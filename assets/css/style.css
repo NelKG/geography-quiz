@@ -53,8 +53,8 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 800px;
-    max-width: 70rem;
+    width: 700px;
+    max-width: 60rem;
     /* background-color: white; */
     border-radius: 5px;
     margin: 20px 0;
@@ -104,15 +104,15 @@ body {
     width: 100%;
     border: 1px solid #222;
     /* padding: 10px; */
-    margin: 20px 0;
+    margin: 2rem;
     text-align: centerright;
-    border-radius: 5px;
+    border-radius: 4x;
     cursor: pointer;
     transition: all 0.4s;
     text-decoration: none;
     /* position: relative; */
     padding: 2rem, 0;
-    */
+
 }
 
 .btn:hover {
@@ -141,7 +141,7 @@ body {
     width: 170px;
     border: 0;
     padding: 10px 20px;
-
+    /* margin: 0.5 rem; */
     margin: 30px auto 0;
     border-radius: 4px;
     cursor: pointer;
@@ -171,7 +171,7 @@ body {
 
 }
 
-#restart {}
+
 
 #user-score {
     font-size: 1.5em;
@@ -180,11 +180,11 @@ body {
 }
 
 .correct {
-    background: whitesmoke;
+    background: #01321748;
 }
 
 .incorrect {
-    background: rgb(192, 192, 192);
+    background: #ff080073;
 
 }
 
@@ -194,6 +194,19 @@ body {
 
 #score-area {
     display: none;
+    /* margin: 2rem;
+    justify-content: right;
+    align-items: right;
+    background: rgb(192, 192, 192);
+    color: #222;
+    font-weight: 800;
+    width: 170px;
+    border: 0;
+    padding: 10px 20px; */
+    /* margin: 0.5 rem; */
+    /* margin: 30px auto 0; */
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .resultBox {
