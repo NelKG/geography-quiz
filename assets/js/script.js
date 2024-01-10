@@ -1,3 +1,30 @@
+const questionElement= document.getElementById("question");
+const answerButton = document.getElementById("answer-buttins");
+const nextButton= document.getElementById ("answer-btn");
+
+let currentQuestionIndex = 0;
+let score = 0;
+
+
+function startquiz(){
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButton.innerHTML = "Next";
+    showQuestion();
+
+
+}
+
+function showQuestion(){
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo =currentQuestionIndex +1;
+    questionElement.innerHTML = questionNo + "." + currentQuestion.question;
+
+
+}
+
+
+
 const questions = [
     {
         question: "What is the capital of Sweden?",
