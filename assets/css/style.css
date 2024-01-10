@@ -60,3 +60,19 @@ body{
 
 
 }
+
+btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 255, 0.897);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+/* .btn:hover:not([disabled]) {
+
+    color: #fff;
+} */
+
+.btn:disabled {
+    cursor: no-drop;
+}
