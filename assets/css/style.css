@@ -44,7 +44,7 @@ body {
     max-width: 60rem;
     border-radius: 5px;
     margin: 20px 0;    
-    color: #333;
+    color: #fffffff8;
     font-weight: 700;
     background-color: #ffffff; 
     visibility: hidden;
@@ -145,12 +145,13 @@ body {
     align-items: center;
     width: 400px;
     height: 10%;
+    font-size: 20px;
   }
         
 
    
   
-}
+
 
     
 
@@ -181,20 +182,14 @@ button{
 
 #score-area {
     display: none;
-    /* margin: 2rem;
-    justify-content: right;
-    align-items: right;
-    background: rgb(192, 192, 192);
-    color: #222;
-    font-weight: 800;
-    width: 170px;
-    border: 0;
-    padding: 10px 20px; */
-    /* margin: 0.5 rem; */
-    /* margin: 30px auto 0; */
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: 5px;
+    color: #FAFAFA;
+    cursor: pointer; 
+
 }
+    
+
+
 
 .resultBox {
 
