@@ -4,47 +4,67 @@ const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
-const userScore = document.getElementById('user-score');
-const restart = document.getElementById('restart');
+
+const restartButton = document.getElementById('restart');
 let countOfQuestion = document.querySelector('number-of-question');
-let scorearea = document.querySelector = ('score-area');
-const questionCounter = document.getElementById ('question-counter')
+const scoreArea = document.getElementById('score-area')
+const userScore = document.getElementById('score');
+//const showFinalScore = document.getElementById('finalscore');
+
+//let scorearea = document.querySelector = ('score-area');
+const questionCounter = document.getElementById ('question-counter');
 const questionCounterText = document.getElementById('questionCounter');
 let container = document.getElementById('question-container');
 //const scoreText = document.getElementById('score');
 //const resultBox = document.getElementById('resultBox');
-
+//let restart
 let shuffledQuestions, currentQuestionIndex;
 var correctAnswers = 0;
+var incorrectAnswers = 0;
 let score = 0;
-
-
-
 //code to enable start button to start the click//
-
+//event listender for the next button//
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
+
     console.log(questionCounter, "< ===questionCounter")
     if(parseInt(questionCounter.innerText) < 8){
+    // console.log(typof, questionCounter.innerText);
+    //hide button
+    //display restart
     questionCounter.innerText =  parseInt(questionCounter.innerText) + 1
-    }
+    }else{
+        nextButton.style.display = "none";
+        restartButton.classList.add("hide");
+    
+      //..nextButton.classList('my-hide')
+      //..restartButton.style.display('my-hide')
+      //resetValues();
+      //tartQuiz();
+    };
+    
+
+    // move these inside the if statement
     currentQuestionIndex++;
     setNextQuestion();
+
+    // else hide the button 
+    
 });
+
+
 //code to start the quiz //
 function startQuiz() {
     startButton.classList.add('hide');
-    // questionContainerElement.classList.remove('hide');
+    questionContainerElement.classList.remove('hide');
     container.style.visibility = 'visible';
     const scoreArea = document.getElementById('score-area');
     scoreArea.style.display = 'block';
     nextButton.style.display = 'block'
-    startButton.classList.add('hide');
-    restart.style.display = 'hide';
+    //startButton.classList.add('hide');
+    //restart.style.display = 'hide';
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
-//questionContainerElement.classList.remove('hide');
-//    ClasscontainerElement.className.add('hide');
     setNextQuestion();
     
     
@@ -60,7 +80,6 @@ function setNextQuestion() {
 //code to take shuffled questions// 
 
 function showQuestion(question) {
-
         questionElement.innerText = question.question;
         question.answers.forEach(answer => {
         const button = document.createElement('button');
@@ -83,10 +102,14 @@ function resetState() {
     clearStatusClass(document.body);
     nextButton.classList.add('hide');
     while (answerButtonsElement.firstChild) {
-        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+       answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
 
+
+    
+
 }
+
 
 function selectAnswer(e) {
     answerButtonsElement.childNodes.forEach(function (btn) {
@@ -100,12 +123,12 @@ function selectAnswer(e) {
     const incorrectVal = parseInt(incorrect.innerText);
     if (correct) {
         score.innerText = scoreVal + 1;
-        console.log("correct", parseInt(score.innerText));
+        console.log("score", parseInt(score.innerText));
 
         correctAnswers++;
     } else {
         incorrect.innerText = incorrectVal + 1;
-        console.log("correct", parseInt(incorrect.innerText));
+        console.log("score", parseInt(incorrect.innerText));
     }
     setStatusClass(document.body, correct);
     Array.from(answerButtonsElement.children).forEach(button => {
@@ -121,7 +144,7 @@ function selectAnswer(e) {
     }
     
 //nextButton.classList.remove('hide');
-//nextButton.style.dislay = "block";
+
 
 
 }
@@ -139,12 +162,29 @@ function setStatusClass(element, correct) {
 
     }
 }
-
+//code that clears each answer after each question//
 function clearStatusClass(element) {
-    element.classList.remove('correct');
+    element.classList.remove('score');
     element.classList.remove('incorrect');
 
 }
+
+
+function resetValues(){
+    correctAnswers = 0;
+    incorrectAnswers = 0;
+    questionCounter = 1;
+    //questionCounter.textContent =1;
+    //scoreArea.style.display = 'none';
+    //startButton.style.display = 'none';
+    
+    }
+
+function restartQuiz(){
+restartButton.addEventListener('click', resetValues());
+
+}
+
 //list of questions used in the quiz//
 const questions = [
     {
@@ -227,4 +267,10 @@ const questions = [
     }
 
 ];
+
+
+
+//check if current question is 8
+//if 8, remove the next button, and display the restart button
+//the restart button's visibility should not depend on whether the user has selected an option or not
 

@@ -78,15 +78,15 @@ body {
     font-weight: 600;
     width: 100%;
     border: 1px solid #222;
-    /* padding: 10px; */
+    
     margin: 2rem;
-    text-align: centerright;
-    border-radius: 4x;
+    text-align: center;
+    border-radius: 4px;
     cursor: pointer;
     transition: all 0.4s;
     text-decoration: none;
-    /* position: relative; */
-    padding: 2rem, 0;
+    
+    padding: 2rem 0;
 
 }
 
@@ -138,7 +138,7 @@ body {
     position: fixed;
     bottom: 50px;
     right: 50%;
-    transform: translate(50%, -50%);
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,7 +166,7 @@ button{
 
 }
 
-.hide{
+.hide {
     display: none;
 }
 
@@ -195,7 +195,7 @@ button{
 }
 
 .scores{
-    font-size: 24;
+    font-size: 24px;
     margin-bottom: 5px;
 }
 
@@ -206,7 +206,7 @@ button{
     border-radius: 5px;
     text-decoration: none;
     margin-bottom: 10px;
-    transition: backgound-color 0.3s ease;
+    transition: background-color 0.3s ease;
 
 
 
