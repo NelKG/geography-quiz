@@ -59,9 +59,41 @@ I choose the main background color of the page as a block colour which is appeal
 I ensured the heading was very simple and easy to read. 
 I like a plain heading to contrast with the block background colour of blue. I think the blue and white is appealing visually.
 I was influenced by the kera-cudmore The QuizArms and the overall workings of the quiz.
+I was further influcned by Web dev [insert youtube link here]
+
+The following colors were used as a mix of hex colors and rgna to make the color and contrast 
+lighter and darker as needed 
+
+1. #ffffff white background color of the container 
+
+2. #006994 blue as the background colour 
+
+3. #333 border bottom short hand property for setting border style and color
+
+4. #ffffff8 light color and shade of white for the background color of the heading
+
+5. #rgba, 255, 255, 255, 0.897 light shade of grey background in the button
+
+6. #222 background of button - dark color for button font grey dark grey
+
+7. #fff light color version of white 
+
+8. #008035; green for correct answer 
+
+9. #ff080073; red for an incorrect answer 
+
+[here is the link to the website used for colors]
+(https://www.w3schools.com/colors/colors_picker.asp)
+### Typography
+I choose fonts from [Google Fonts] which is a very popular website for importing fonts. 
+I choose it for acessibility and it had the fonts weights and fonts very easily displayed. 
+It was very east to import and copy the font which I did it did not require the font to be downloaded
 
 https://fonts.google.com/specimen/Roboto?preview.text=Geography%20Quiz&preview.text_type=custom&query=roboto
 
+I choose the fonts Roboto', sans-serif; which are clear easily visible and commonly used. I was influenced by  xx I used the weight 300 as it had a nice finish and I was influenced from the  xx
+I wamted to create a clean simple font-style 
+the two i choose are very clear and neat
 font choice font awesome and google fonts Light 300 font chosen. 
 
 hexcode for light grey was chosen - #D3D3D3 #d3dede check which color. 
@@ -69,9 +101,9 @@ hexcode for light grey was chosen - #D3D3D3 #d3dede check which color.
 https://www.google.com/search?q=create+a+quiz+using+javascript+for+dummies&rlz=1C1GCEA_enIE1010IE1010&oq=create+a+quiz+using+javascript+for+dummies&aqs=chrome..69i57j33i160.18362j0j7&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:370e1017,vid:riDzcEQbX6k link to youtube video some 
 code taken from 
 
-image picture of map 
-<https://www.freepik.com/free-vector/white-world-map_783204.htm#query=3d%20world%20map&position=7&from_view=keyword&track=ais>
+I used an icon of a question mark which I imported from 
 
+### Wireframes 
 
 youtube ideo 
 

@@ -18,9 +18,14 @@ let container = document.getElementById('question-container');
 //const scoreText = document.getElementById('score');
 //const resultBox = document.getElementById('resultBox');
 //let restart
-let shuffledQuestions, currentQuestionIndex;
-var correctAnswers = 0;
-var incorrectAnswers = 0;
+//let shuffledQuestions, currentQuestionIndex;
+let  correctAnswers = 0;
+let incorrectAnswers = 0;
+let currentQuestionIndex;
+
+///variables to store the current values//
+//var correctAnswers = initialValue1;
+//var incorrectAnswers  = initialvalue2;
 let score = 0;
 //code to enable start button to start the click//
 //event listender for the next button//
@@ -29,43 +34,59 @@ nextButton.addEventListener('click', () => {
 
     console.log(questionCounter, "< ===questionCounter")
     if(parseInt(questionCounter.innerText) < 8){
-    // console.log(typof, questionCounter.innerText);
+     console.log(typof, questionCounter.innerText);
     //hide button
     //display restart
+    currentQuestionIndex++;
+    setNextQuestion();
     questionCounter.innerText =  parseInt(questionCounter.innerText) + 1
     }else{
-        nextButton.style.display = "none";
-        restartButton.classList.add("hide");
+        if (currentQuestionIndex === 8) { nextButton.style.display = "none"; restartButton.style.display = "block"; }
+        //nextButton.style.display = ("none");
+        //restartButton.classList.add("hide");
     
       //..nextButton.classList('my-hide')
       //..restartButton.style.display('my-hide')
       //resetValues();
       //tartQuiz();
-    };
+    }
     
 
     // move these inside the if statement
-    currentQuestionIndex++;
-    setNextQuestion();
+    //currentQuestionIndex++;
+    //setNextQuestion();
 
     // else hide the button 
+    restartButton.addEventListener('click', () => {
+        ///resetValues();
+        startQuiz();
+      });
     
 });
 
+//function resetValues(){
+    //correctAnswers = initialValue1;
+    //incorrectAnswers =initialValue2;
+
+    
+//}
+//document.getElementById("restartButton").addEventListener("click", resetValues);
 
 //code to start the quiz //
 function startQuiz() {
     startButton.classList.add('hide');
     questionContainerElement.classList.remove('hide');
-    container.style.visibility = 'visible';
-    const scoreArea = document.getElementById('score-area');
-    scoreArea.style.display = 'block';
-    nextButton.style.display = 'block'
+    //container.style.visibility = 'visible';
+    //const scoreArea = document.getElementById('score-area');
+    //scoreArea.style.display = 'block';
+    //nextButton.style.display = 'block'
     //startButton.classList.add('hide');
     //restart.style.display = 'hide';
-    shuffledQuestions = questions.sort(() => Math.random() - .5);
-    currentQuestionIndex = 0;
+    //shuffledQuestions = questions.sort(() => Math.random() - .5);
+    //currentQuestionIndex = 0;
     setNextQuestion();
+
+    resetValues();
     
     
 }
@@ -169,21 +190,30 @@ function clearStatusClass(element) {
 
 }
 
+//function updateScore(correct) {
+    //if (correct) {
+      //correctAnswers++;
+    //} /else {
+      //incorrectAnswers++;
+    //}
+    //userScore.innerText = correctAnswers;
+  //}
 
-function resetValues(){
-    correctAnswers = 0;
-    incorrectAnswers = 0;
-    questionCounter = 1;
+
+//function resetValues(){
+   // correctAnswers = 0;
+    //incorrectAnswers = 0;
+    //questionCounter = 1;
     //questionCounter.textContent =1;
     //scoreArea.style.display = 'none';
     //startButton.style.display = 'none';
     
-    }
+   // }
 
-function restartQuiz(){
-restartButton.addEventListener('click', resetValues());
+//f//unction restartQuiz(){
+//restartButton.addEventListener('click', startQuiz);
 
-}
+
 
 //list of questions used in the quiz//
 const questions = [
