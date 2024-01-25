@@ -58,8 +58,9 @@ user friendly page.
 I choose the main background color of the page as a block colour which is appealing to the eye. 
 I ensured the heading was very simple and easy to read. 
 I like a plain heading to contrast with the block background colour of blue. I think the blue and white is appealing visually.
+
 I was influenced by the kera-cudmore The QuizArms and the overall workings of the quiz.
-I was further influcned by Web dev [insert youtube link here]
+I was further influecned by Web dev [youtube link here] <https://www.youtube.com/watch?v=riDzcEQbX6k>
 
 The following colors were used as a mix of hex colors and rgna to make the color and contrast 
 lighter and darker as needed 
@@ -84,6 +85,7 @@ lighter and darker as needed
 
 [here is the link to the website used for colors]
 (https://www.w3schools.com/colors/colors_picker.asp)
+
 ### Typography
 I choose fonts from [Google Fonts] which is a very popular website for importing fonts. 
 I choose it for acessibility and it had the fonts weights and fonts very easily displayed. 
@@ -91,22 +93,135 @@ It was very east to import and copy the font which I did it did not require the 
 
 https://fonts.google.com/specimen/Roboto?preview.text=Geography%20Quiz&preview.text_type=custom&query=roboto
 
-I choose the fonts Roboto', sans-serif; which are clear easily visible and commonly used. I was influenced by  xx I used the weight 300 as it had a nice finish and I was influenced from the  xx
-I wamted to create a clean simple font-style 
-the two i choose are very clear and neat
+I choose the fonts Roboto', sans-serif; which are clear easily visible and commonly used.  I used the weight 300 as it had a nice finish.
+I wamted to create a clean simple font-style,the two i choose are very clear and neat
 font choice font awesome and google fonts Light 300 font chosen. 
 
 hexcode for light grey was chosen - #D3D3D3 #d3dede check which color. 
 
-https://www.google.com/search?q=create+a+quiz+using+javascript+for+dummies&rlz=1C1GCEA_enIE1010IE1010&oq=create+a+quiz+using+javascript+for+dummies&aqs=chrome..69i57j33i160.18362j0j7&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:370e1017,vid:riDzcEQbX6k link to youtube video some 
-code taken from 
 
-I used an icon of a question mark which I imported from 
+
+
+I used an icon of a question mark which I imported from [here is a link to the webpage] (https://fontawesome.com/)
+
 
 ### Wireframes 
+
+### W3C Code Validator - 
+<details>
+<summary> html code validator</summary>
+<br>
+![html](https://validator.w3.org/nu/#textarea)
+
+</details >
+
+### Features 
+
+
+### General Features on the page
+
+### Future Implementation 
+For future implementation I would make the quiz more interactive 
+I would ensure that there is a score feature added to the score area and that a Final score button is 
+created to ensure the quiz participant can see their quiz and also see can them improve on their previos score 
+I would ensure that the next button and resart button are working perfectly.
+
+### Accessibility 
+I have been mindful during coding to ensure that the website is as accessible friendly as possible. This has been have achieved by:
+
+Using semantic HTML.
+Using a hover state on all buttons on the site to make it clear to the user if they are hovering over a button.
+Choosing a sans serif font for the site - these fonts are suitable for people with dyslexia.
+Ensuring that there is a sufficient colour contrast throughout the site.
+
+### Lighthouse
 
 youtube ideo 
 
 <https://stackoverflow.com/questions/66308020/how-to-add-a-score-function-to-my-quiz-using-javascript>
 
 errors answer buttons element nodefined - debugged 
+### Languages Used
+
+As this is my second project HTML & CSS & Javacscript are the languages I used throughout this project.
+
+### Frameworks, Libraries & Programs Used
+
+1. Languages Used - HTML and CSS and Javascript  were used to build this quiz
+2. Frameworks
+3. Balsamiq was used to create wireframes
+4. Git for version control
+5. Github to save and store files for the website.
+6. Google fonts to use the font code used on the website.
+7. Font Awesome fro the icons used on the website11.
+8. Google Dev tools to assist with the reponsiveness
+
+
+### Deployment
+
+1. Log in to Github.
+2. Find the repository for this project, Geography-Quiz.
+3. Click on the Settings link.
+4. Click on the Pages link in the left hand side navigation bar.
+5. In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
+6. Click Save. Your live Github Pages site is now deployed at the URL show
+
+I saved the code after it was added to Gitpod. I committed the cnages and then pushed the final code to 
+Github. I saved the settings on my github page as a main root sourced and then I deployed the pages to github
+### Local Development
+
+The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
+
+#### How to Fork
+
+To fork the Geography-quiz
+log in to Github
+Go to the repository for this project NelKG/geography-quiz
+Click the fork button in thetop right corner
+
+#### How to Clone
+
+To clone Geography-quiz
+log in to Github
+Go to the repository for geography-quiz
+click on the code button, select whether you would like to lone with HTTPS, SSH or
+GithuB CLI and copy the link shown
+
+
+### Testing 
+
+
+
+
+### Debugging 
+its an ongoing process
+I'm learning every day and becoming more knowledgdeable 
+changing the position of the containers 
+remove the next button once the restart button is clicked 
+adding a reset values function to the quiz and a score display is future work which must be done 
+
+### Credits 
+I learned from the material provided in the Love Maths project and the material given in the code institute course. I sued several you tube tutorials to learn how to get the question counter and the correct and incorrect buttons to work - 
+
+### Code Used
+ 
+The code used in this project was taken from several sources and influenced by several resources
+Web dev dimplified - [youtube]
+
+[youtube ]<https://www.youtube.com/watch?v=PBcqGxrr9g8>
+[James Quick Youtube ] <https://www.youtube.com/watch?v=jfOv18lCMmw&>
+
+list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=11>
+
+https://www.youtube.com/watch?v=jfOv18lCMmw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=11>
+
+
+### Content 
+
+The content on the page information for captial countries was taken from google confirming that correct questions and options for each question. The questions were derived by me. 
+
+### Acknowledgements 
+I would to thanks my mentor for his assistance His sessions were very helpful and
+practical. He gave me great feedback and guidance throughout each session.
+I also referenced the github resource of <https://github.com/kera-cudmore/TheQuizArms/blob/main/README.md> 
+I would like to thank all the staff at tutor support for the assistance at all times.
