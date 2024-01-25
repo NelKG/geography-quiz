@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">;);
+
+
 body {
     background-color: #006994;
     margin: 0;
@@ -210,3 +213,60 @@ button{
     background-color: #45a049;
 }
 
+/* media queries created to ensure that the website is responsive 
+for tablet, mobile device, desktop and laptop screen */
+@media only screen and (max-width: 672px) {
+    #container {
+        font-size: 10px;
+
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #score-text {
+        font-size: 8px;
+    }
+
+}
+
+@media only screen and (min-width: 672px) {
+    #container {
+        font-size: 10px;
+
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #score-area {
+        font-size: 8px;
+    }
+
+}
+
+@media only screen and (max-width: 938px) {
+    #container {
+        font-size: 14px;
+
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #score-area{
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 938px) {
+    #container {
+        font-size: 18px;
+
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #score-area {
+        font-size: 10px;
+    }
+
+}
