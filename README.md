@@ -29,7 +29,7 @@
   - [ Acknowledgments](#acknowledgments)
 
 ## User Experience 
-Add url completed link here [View my Gituhub Profile] ****
+Add url completed link here [View my Gituhub Profile] (https://nelkg.github.io/geography-quiz/)
 
 ### User Stories
 
@@ -99,21 +99,27 @@ font choice font awesome and google fonts Light 300 font chosen.
 
 hexcode for light grey was chosen - #D3D3D3 #d3dede check which color. 
 
-
-
-
 I used an icon of a question mark which I imported from [here is a link to the webpage] (https://fontawesome.com/)
 
 
 ### Wireframes 
 details>
-<summary> html code validator</summary>
+<summary> Wire Frame</summary>
 <br>
-![html](https://validator.w3.org/nu/#textarea)
+![html](</assets/documentation/Wireframe.PNG>)
 
 </details >
 
 ### W3C Code Validator - 
+
+
+<details>
+<summary>html code validator</summary>
+<br>
+
+![html] </assets/documentation/w3index.PNG>
+
+</details>
 <<p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
@@ -159,14 +165,14 @@ Ensuring that there is a sufficient colour contrast throughout the site.
 <details>
 <summary>desktop-lighthouse</summary>
 <br>
-![lighthouse inspection](<documentation/desktop-lighthouse>)
+![lighthouse inspection](</assets/documentation/desktop-lighthouse.PNG>)
 
 I have added a pdf document which shows all the light house inspections for the desktop and mobile. 
 </details>
 <details>
 <summary>mobile-lighthouse</summary>
 <br>
-![lighthouse inspection](<documentatiom/desktop lighthouse>)
+![lighthouse inspection](</assets/documentation/mobile-lighthouse.PNG>)
 
 I have added a pdf document which shows all the light house inspections for the desktop and mobile. 
 </details>
@@ -249,7 +255,7 @@ https://www.youtube.com/watch?v=jfOv18lCMmw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJi
 
 ### Content 
 
-The content on the page information for captial countries was taken from google confirming that correct questions and options for each question. The questions were derived by me. 
+The content on the page information for capital countries was taken from google confirming that correct questions and options for each question. The questions were derived by me. 
 
 ### Acknowledgements 
 I would to thanks my mentor for his assistance His sessions were very helpful and

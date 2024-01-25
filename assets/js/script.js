@@ -5,10 +5,7 @@ const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const restartButton = document.getElementById('restart');
-
-
 const questionCounter = document.getElementById ('question-counter');
-
 let container = document.getElementById('question-container');
 
 let shuffledQuestions, currentQuestionIndex;
@@ -18,34 +15,26 @@ var  correctAnswers = 0;
 //event listender for the next button//
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
-
     console.log(questionCounter, "< ===questionCounter")
     if(parseInt(questionCounter.innerText) < 8){
      console.log(questionCounter.innerText);
-    //hide button
-    //display restart
+    
     currentQuestionIndex++;
     setNextQuestion();
     questionCounter.innerText =  parseInt(questionCounter.innerText) + 1
     }else{
         if (currentQuestionIndex === 8) { nextButton.style.display = "none"; restartButton.style.display = "block"; }
         nextButton.style.display = ("none");
-        restartButton.classList.add("hide");
-    
+        restartButton.classList.add("hide");   
       
-    }
-    
-  
-    
+    }    
 
     // else hide the button 
     restartButton.addEventListener('click', () => {
         
         startQuiz();
-      });
-    
+      });    
 });
-
 
 //code to start the quiz //
 function startQuiz() {
@@ -55,22 +44,16 @@ function startQuiz() {
     const scoreArea = document.getElementById('score-area');
     scoreArea.style.display = 'block';
     nextButton.style.display = 'hide'
-    startButton.classList.add('hide');
-    
+    startButton.classList.add('hide');    
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
-    setNextQuestion();
-
-   
-    
-    
+    setNextQuestion();      
 }
 
 //code to set next question and shuffle each question//
 function setNextQuestion() {
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
-
 }
 
 //code to take shuffled questions// 
@@ -85,14 +68,10 @@ function showQuestion(question) {
             button.dataset.correct = answer.correct;
         }
         button.addEventListener('click', selectAnswer);
-        answerButtonsElement.appendChild(button);
-        
+        answerButtonsElement.appendChild(button);       
             
     });
-    
-}
-  
-
+    }  
 
 function resetState() {
     clearStatusClass(document.body);
@@ -100,12 +79,7 @@ function resetState() {
     while (answerButtonsElement.firstChild) {
        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
-
-
-    
-
-}
-
+   }
 
 function selectAnswer(e) {
     answerButtonsElement.childNodes.forEach(function (btn) {
@@ -140,7 +114,6 @@ function selectAnswer(e) {
 
     }
     
-
 }
 //code to set the correct and incorrect answer 
 function setStatusClass(element, correct) {
@@ -160,10 +133,7 @@ function setStatusClass(element, correct) {
 function clearStatusClass(element) {
     element.classList.remove('score');
     element.classList.remove('incorrect');
-
 }
-
-
 
 //list of questions used in the quiz//
 const questions = [
