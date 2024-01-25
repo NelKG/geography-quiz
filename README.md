@@ -117,7 +117,7 @@ I used an icon of a question mark which I imported from [here is a link to the w
 <summary>html code validator</summary>
 <br>
 
-![html](assets/documentation/w3index.PNG) 
+![html code validator](assets/documentation/w3index.PNG) 
 
 </details>
 <<p>
@@ -128,7 +128,7 @@ I used an icon of a question mark which I imported from [here is a link to the w
     </a>
 </p>
 
-p>
+
 <a href="http://jigsaw.w3.org/css-validator/check/referer">
     <img style="border:0;width:88px;height:31px"
         src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
@@ -136,20 +136,18 @@ p>
     </a>
 </p>
         
-            
-
-W3c css validator 
-
-
-### Features 
+      
+  ### Features 
 
 
 ### General Features on the page
+There is a start button. Once the start button is clicked. The quiz will begin and the question container 
+will appear. The question counter, correct and incorrect answers will appear and update once the next button is clicked. 
 
 ### Future Implementation 
 For future implementation I would make the quiz more interactive 
 I would ensure that there is a score feature added to the score area and that a Final score button is 
-created to ensure the quiz participant can see their quiz and also see can them improve on their previos score 
+created to ensure the quiz participant can see their quiz and also see can them improve on their previous score 
 I would ensure that the next button and resart button are working perfectly.
 
 ### Accessibility 
