@@ -106,14 +106,16 @@ I used an icon of a question mark which I imported from [here is a link to the w
 
 
 ### Wireframes 
-
-### W3C Code Validator - 
-<details>
+details>
 <summary> html code validator</summary>
 <br>
 ![html](https://validator.w3.org/nu/#textarea)
 
 </details >
+
+### W3C Code Validator - 
+<
+
 
 ### Features 
 
