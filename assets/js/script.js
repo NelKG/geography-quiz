@@ -18,10 +18,11 @@ let container = document.getElementById('question-container');
 //const scoreText = document.getElementById('score');
 //const resultBox = document.getElementById('resultBox');
 //let restart
-//let shuffledQuestions, currentQuestionIndex;
-let  correctAnswers = 0;
+let shuffledQuestions, currentQuestionIndex;
+var  correctAnswers = 0;
+let question;
 let incorrectAnswers = 0;
-let currentQuestionIndex;
+//let currentQuestionIndex;
 
 ///variables to store the current values//
 //var correctAnswers = initialValue1;
@@ -34,7 +35,7 @@ nextButton.addEventListener('click', () => {
 
     console.log(questionCounter, "< ===questionCounter")
     if(parseInt(questionCounter.innerText) < 8){
-     console.log(typof, questionCounter.innerText);
+     console.log(questionCounter.innerText);
     //hide button
     //display restart
     currentQuestionIndex++;
@@ -42,8 +43,8 @@ nextButton.addEventListener('click', () => {
     questionCounter.innerText =  parseInt(questionCounter.innerText) + 1
     }else{
         if (currentQuestionIndex === 8) { nextButton.style.display = "none"; restartButton.style.display = "block"; }
-        //nextButton.style.display = ("none");
-        //restartButton.classList.add("hide");
+        nextButton.style.display = ("none");
+        restartButton.classList.add("hide");
     
       //..nextButton.classList('my-hide')
       //..restartButton.style.display('my-hide')
@@ -76,17 +77,17 @@ nextButton.addEventListener('click', () => {
 function startQuiz() {
     startButton.classList.add('hide');
     questionContainerElement.classList.remove('hide');
-    //container.style.visibility = 'visible';
-    //const scoreArea = document.getElementById('score-area');
-    //scoreArea.style.display = 'block';
-    //nextButton.style.display = 'block'
-    //startButton.classList.add('hide');
-    //restart.style.display = 'hide';
-    //shuffledQuestions = questions.sort(() => Math.random() - .5);
-    //currentQuestionIndex = 0;
+    container.style.visibility = 'visible';
+    const scoreArea = document.getElementById('score-area');
+    scoreArea.style.display = 'block';
+    nextButton.style.display = 'hide'
+    startButton.classList.add('hide');
+    restart.style.display = 'hide';
+    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    currentQuestionIndex = 0;
     setNextQuestion();
 
-    resetValues();
+   // resetValues();
     
     
 }
@@ -161,6 +162,7 @@ function selectAnswer(e) {
        
         startButton.innerText = 'Restart';
         startButton.classList.remove('hide');
+        nextButton.classList.remove('hide');
 
     }
     
@@ -303,4 +305,3 @@ const questions = [
 //check if current question is 8
 //if 8, remove the next button, and display the restart button
 //the restart button's visibility should not depend on whether the user has selected an option or not
-
