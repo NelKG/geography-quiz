@@ -156,11 +156,22 @@ Ensuring that there is a sufficient colour contrast throughout the site.
 
 ### Lighthouse
 
-youtube ideo 
+<details>
+<summary>desktop-lighthouse</summary>
+<br>
+![lighthouse inspection](<documentation/desktop-lighthouse>)
 
-<https://stackoverflow.com/questions/66308020/how-to-add-a-score-function-to-my-quiz-using-javascript>
+I have added a pdf document which shows all the light house inspections for the desktop and mobile. 
+</details>
+<details>
+<summary>mobile-lighthouse</summary>
+<br>
+![lighthouse inspection](<documentatiom/desktop lighthouse>)
 
-errors answer buttons element nodefined - debugged 
+I have added a pdf document which shows all the light house inspections for the desktop and mobile. 
+</details>
+
+
 ### Languages Used
 
 As this is my second project HTML & CSS & Javacscript are the languages I used throughout this project.
