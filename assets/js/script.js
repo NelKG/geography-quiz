@@ -15,13 +15,13 @@ var  correctAnswers = 0;
 //event listender for the next button//
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
-    console.log(questionCounter, "< ===questionCounter")
+    console.log(questionCounter, "< ===questionCounter");
     if(parseInt(questionCounter.innerText) < 8){
      console.log(questionCounter.innerText);
     
     currentQuestionIndex++;
     setNextQuestion();
-    questionCounter.innerText =  parseInt(questionCounter.innerText) + 1
+    questionCounter.innerText =  parseInt(questionCounter.innerText); + 1
     }else{
         if (currentQuestionIndex === 8) { nextButton.style.display = "none"; restartButton.style.display = "block"; }
         nextButton.style.display = ("none");

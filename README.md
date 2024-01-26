@@ -121,6 +121,23 @@ I used an icon of a question mark which I imported from [here is a link to the w
 ![html code validator](assets/documentation/w3index.png) 
 
 </details>
+
+
+details>
+<summary>JJshint</summary>
+<br>
+
+![Jshint](assets/documentation/Jshint.png) 
+
+</details> 
+
+<details>
+<summary>JShint2</summary>
+<br>
+
+![JShint](assets/documentation/Jshint2.png) 
+
+</details>
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
@@ -246,17 +263,18 @@ I learned from the material provided in the Love Maths project and the material 
 ### Code Used
  
 The code used in this project was taken from several sources and influenced by several resources
-Web dev dimplified - [youtube]
+1. Web dev dimplified - [youtube] <https://www.youtube.com/watch?v=PBcqGxrr9g8>
 
-[youtube ]<https://www.youtube.com/watch?v=PBcqGxrr9g8>
+2. [James Quick Youtube ] <https://www.youtube.com/watch?v=jfOv18lCMmw&>
 
-[James Quick Youtube ] <https://www.youtube.com/watch?v=jfOv18lCMmw&>
+3. https://www.youtube.com/watch?v=PBcqGxrr9g8
 
-list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=11>
-https://www.youtube.com/watch?v=PBcqGxrr9g8
+4. https://www.youtube.com/watch?v=jfOv18lCMmw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=11>
 
-https://www.youtube.com/watch?v=jfOv18lCMmw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=11>
+ The part of the quiz function correct answer was taken from a youtube tutorial listed above.
 
+ All the code used in this project which was used from the sources above in the tutorials listed above.
+ The initial idea and structure of the quiz was influenced by Web Dev and youtube tutorial no 3 listed above.
 
 ### Content 
 
