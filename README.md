@@ -249,9 +249,11 @@ The code used in this project was taken from several sources and influenced by s
 Web dev dimplified - [youtube]
 
 [youtube ]<https://www.youtube.com/watch?v=PBcqGxrr9g8>
+
 [James Quick Youtube ] <https://www.youtube.com/watch?v=jfOv18lCMmw&>
 
 list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=11>
+https://www.youtube.com/watch?v=PBcqGxrr9g8
 
 https://www.youtube.com/watch?v=jfOv18lCMmw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=11>
 
