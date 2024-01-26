@@ -29,14 +29,14 @@
   - [ Acknowledgments](#acknowledgments)
 
 ## User Experience 
-Add url completed link here [View my Gituhub Profile] (https://nelkg.github.io/geography-quiz/)
+ url completed link here [View my Gituhub Profile] (https://nelkg.github.io/geography-quiz/)
 
 ### User Stories
 
 User Experience (Ux)
-Geography-Quiz is a quiz designed to test the knowledge of the participant of the captial 
+geography-Quiz is a quiz designed to test the knowledge of the participant of the captial 
 cities of the world. The questions will be shuffled each time the restart button is clicked. The questions will be in a different order. The correct and incorrect answer will be on display on each occassion. The correct answer will show in green and the incorrect answer will display in a red color on the screen. Once the correct or incorrect answer will be clicked, no other options will be enabled to be clicked on the page
-1. the website is a quiz that tests geography from different pasts of the world 
+1. the website is a quiz that tests geography from different parts of the world 
 2. the user can take the quiz as many times as they would like 
 3. the final score result will refelct if the user is improving after each occassion of taking the quiz
 4. it is a quiz and fun game to test the knowledge
@@ -62,7 +62,7 @@ I like a plain heading to contrast with the block background colour of blue. I t
 I was influenced by the kera-cudmore The QuizArms and the overall workings of the quiz.
 I was further influecned by Web dev [youtube link here] <https://www.youtube.com/watch?v=riDzcEQbX6k>
 
-The following colors were used as a mix of hex colors and rgna to make the color and contrast 
+The following colors were used as a mix of hex colors and rgba to make the color and contrast 
 lighter and darker as needed 
 
 1. #ffffff white background color of the container 
@@ -104,11 +104,12 @@ I used an icon of a question mark which I imported from [here is a link to the w
 
 ### Wireframes 
 <details>
-<summary> Wire Frame</summary>
+<summary> Wireframe</summary>
 <br>
-![Wire Frame](/assets/documentation/Wireframe.png)
 
-</details >
+![Wireframe](assets/documentation/Wireframe.png) 
+
+</details>
 
 ### W3C Code Validator - 
 
@@ -159,21 +160,26 @@ Choosing a sans serif font for the site - these fonts are suitable for people wi
 Ensuring that there is a sufficient colour contrast throughout the site.
 
 ### Lighthouse
-
 <details>
-<summary>desktop-lighthouse</summary>
+<summary>lighthouse desktop</summary>
 <br>
-![lighthouse inspection](</assets/documentation/desktop-lighthouse.PNG>)
+
+![lighthouse desktop](assets/documentation/desktop-lighthouse.png) 
+
+</details>
+
 
 I have added a pdf document which shows all the light house inspections for the desktop and mobile. 
 </details>
 <details>
-<summary>mobile-lighthouse</summary>
+<summary>lighthouse mobile</summary>
 <br>
-![lighthouse inspection](</assets/documentation/mobile-lighthouse.PNG>)
+
+![lighthouse mobile](assets/documentation/mobile-lighthouse.png) 
+
+</details>
 
 I have added a pdf document which shows all the light house inspections for the desktop and mobile. 
-</details>
 
 
 ### Languages Used
@@ -195,7 +201,7 @@ As this is my second project HTML & CSS & Javacscript are the languages I used t
 ### Deployment
 
 1. Log in to Github.
-2. Find the repository for this project, Geography-Quiz.
+2. Find the repository for this project, geography-Quiz.
 3. Click on the Settings link.
 4. Click on the Pages link in the left hand side navigation bar.
 5. In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
@@ -209,14 +215,14 @@ The local development section gives instructions on how someone else could make 
 
 #### How to Fork
 
-To fork the Geography-quiz
+To fork the geography-quiz
 log in to Github
 Go to the repository for this project NelKG/geography-quiz
 Click the fork button in thetop right corner
 
 #### How to Clone
 
-To clone Geography-quiz
+To clone geography-quiz
 log in to Github
 Go to the repository for geography-quiz
 click on the code button, select whether you would like to lone with HTTPS, SSH or
@@ -224,7 +230,6 @@ GithuB CLI and copy the link shown
 
 
 ### Testing 
-
 
 
 
@@ -236,7 +241,7 @@ remove the next button once the restart button is clicked
 adding a reset values function to the quiz and a score display is future work which must be done 
 
 ### Credits 
-I learned from the material provided in the Love Maths project and the material given in the code institute course. I sued several you tube tutorials to learn how to get the question counter and the correct and incorrect buttons to work - 
+I learned from the material provided in the Love Maths project and the material given in the code institute course. I used several sources and  you tube tutorials to learn how to get the question counter and the correct and incorrect buttons to work - 
 
 ### Code Used
  
@@ -256,7 +261,8 @@ https://www.youtube.com/watch?v=jfOv18lCMmw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJi
 The content on the page information for capital countries was taken from google confirming that correct questions and options for each question. The questions were derived by me. 
 
 ### Acknowledgements 
-I would to thanks my mentor for his assistance His sessions were very helpful and
+I would to thanks my mentor for his assistance.
+ His sessions were very helpful and
 practical. He gave me great feedback and guidance throughout each session.
 I also referenced the github resource of <https://github.com/kera-cudmore/TheQuizArms/blob/main/README.md> 
 I would like to thank all the staff at tutor support for the assistance at all times.
