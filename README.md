@@ -106,7 +106,7 @@ I used an icon of a question mark which I imported from [here is a link to the w
 <details>
 <summary> Wire Frame</summary>
 <br>
-![Wire Frame](assets/documentation/Wireframe.png)
+![Wire Frame](/assets/documentation/Wireframe.png)
 
 </details >
 
@@ -117,7 +117,7 @@ I used an icon of a question mark which I imported from [here is a link to the w
 <summary>html code validator</summary>
 <br>
 
-![html code validator](assets/documentation/w3index.PNG) 
+![html code validator](assets/documentation/w3index.png) 
 
 </details>
 <p>
