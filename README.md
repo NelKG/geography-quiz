@@ -271,10 +271,11 @@ The code used in this project was taken from several sources and influenced by s
 
 4. https://www.youtube.com/watch?v=jfOv18lCMmw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=11>
 
- The part of the quiz function correct answer was taken from a youtube tutorial listed above.
+ The part of the quiz function correct answer was taken from a youtube tutorial listed above no 1 and no 3.
 
- All the code used in this project which was used from the sources above in the tutorials listed above.
+ All the code used in this project was used from the sources above in the tutorials listed above.
  The initial idea and structure of the quiz was influenced by Web Dev and youtube tutorial no 3 listed above.
+ I have used more code than I intended to from the sources above and tried to change it and edit it to perform in way I wanted the quiz to work. 
 
 ### Content 
 
