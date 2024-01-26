@@ -106,7 +106,7 @@ I used an icon of a question mark which I imported from [here is a link to the w
 <details>
 <summary> Wire Frame</summary>
 <br>
-![Wire Frame](assets/documentation/Wireframe.PNG)
+![Wire Frame](assets/documentation/Wireframe.png)
 
 </details >
 
@@ -120,7 +120,7 @@ I used an icon of a question mark which I imported from [here is a link to the w
 ![html code validator](assets/documentation/w3index.PNG) 
 
 </details>
-<<p>
+<p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
             src="http://jigsaw.w3.org/css-validator/images/vcss"
